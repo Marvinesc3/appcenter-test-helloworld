@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.distribute.Distribute;
 
 import android.os.Bundle;
 
@@ -17,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AppCenter.start(getApplication(), "e97dc62c-0d10-4b08-8e44-809397fda7d7",
-                Analytics.class, Crashes.class);
+                Analytics.class, Crashes.class, Distribute.class);
     }
 }
